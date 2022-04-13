@@ -80,6 +80,13 @@ nav img {
   -webkit-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
   -moz-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
 }
+.btn:hover {
+  background: rgb(255, 121, 218);
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.9) 0%, rgba(147, 86, 220, 0.9) 85%);
+  box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
 
 .fonctionnement {
   padding: 50px 20px;
