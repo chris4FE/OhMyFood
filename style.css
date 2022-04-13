@@ -48,7 +48,7 @@ nav img {
   color: #000;
 }
 
-.explore-restaurants {
+.form-restaurants {
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
@@ -57,11 +57,11 @@ nav img {
   text-align: center;
   padding: 50px 40px;
 }
-.explore-restaurants h2 {
+.form-restaurants h2 {
   font-size: 28px;
   margin-bottom: 15px;
 }
-.explore-restaurants__description {
+.form-restaurants__description {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 30px;
@@ -141,6 +141,54 @@ nav img {
   background-color: rgba(146, 86, 220, 0.1);
 }
 
+.restaurants-list {
+  padding: 20px;
+  width: 100%;
+}
+.restaurants-list h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.restaurants-list .restaurants-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
+}
+.restaurants-list .restaurants-card__img {
+  height: 180px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+.restaurants-list .restaurants-card__description {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants-list .restaurants-card__description__genre {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.restaurants-list .restaurants-card__description__name {
+  font-weight: 300;
+}
+
+.restaurants-card-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+.restaurants-card-info .heart1, .restaurants-card-info .heart2 {
+  font-size: 22px;
+}
+.restaurants-card-info .heart2 {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .main {
     display: flex;
@@ -151,7 +199,7 @@ nav img {
     width: 100%;
   }
 
-  .explore-restaurants {
+  .form-restaurants {
     width: 50%;
   }
 
@@ -163,6 +211,19 @@ nav img {
 
   .fonctionnement-list__step {
     padding: 15px 20px;
+  }
+
+  .restaurants-list {
+    padding: 50px;
+  }
+
+  .restaurants-list-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .restaurants-card {
+    width: 23%;
   }
 }
 
