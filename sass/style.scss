@@ -1,9 +1,16 @@
-$purple: #9356DC;
-$lightpurple: rgba(146, 86, 220, 0.1);
-$pink: #FF79DA;
-$mint: #99E2D0;
-$lightgrey: #F6F6F6;
-$darkgrey: #E9E9E9;
+@import "./Utils/variables";
+
+@mixin shadow {
+    box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
+}
+
+@mixin btn-shadow-hover {
+    box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.3);
+}
 
 *{
     box-sizing: border-box;
@@ -69,7 +76,6 @@ nav img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 50px 40px;
 
     h2{
@@ -96,20 +102,16 @@ nav img{
 
 
     // COLORS
-    background: rgb(255,121,218);
-    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 85%);
+    background: $secondary;
+    background: linear-gradient(180deg, $secondary 0%, $primary 85%);
     // BOX-SHADOW
-    box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
-    -webkit-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
-    -moz-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
+    @include shadow;
 
     &:hover{
-        background: rgb(255,121,218);
+        background: $secondary;
         background: linear-gradient(180deg, rgba(255,121,218,0.9) 0%, rgba(147,86,220,0.9) 85%);
-    
-        box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.3);
-        -webkit-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.3);
-        -moz-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.3);
+
+        @include btn-shadow-hover;
     }
 
 }
@@ -149,21 +151,19 @@ nav img{
         white-space: nowrap;
 
         // BOX-SHADOW
-        box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
-        -webkit-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
-        -moz-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
+        @include shadow;
 
         &__icon{
             padding-right: 16px;
             color: #7D7D7D;
 
             &:hover{
-                color: $purple; // Use IF mixin to create rule if hover over li then icon is purple ?
+                color: $primary; // Use IF mixin to create rule if hover over li then icon is primary ?
             }
         }
 
         &::marker{
-            background-color: $purple;
+            background-color: $primary;
             width: 20px;
             height: 20px;
             color: #99E2D0;
@@ -174,7 +174,7 @@ nav img{
             margin-right: 15px;
             margin-left: -36px;
             content: counter(item);
-            background-color: $purple;
+            background-color: $primary;
             border-radius: 100%;
             color: #fff;
             width: 1.2em;
@@ -184,7 +184,7 @@ nav img{
         }
 
         &:hover{
-            background-color: $lightpurple;
+            background-color: $lightprimary;
         }
     }
     }
@@ -207,15 +207,28 @@ nav img{
             margin-bottom: 20px;
 
             // BOX-SHADOW
-            box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
-            -webkit-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
-            -moz-box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
+            @include shadow;
 
 
             &__img{
                 height: 180px;
                 border-radius: 20px 20px 0 0;
                 object-fit: cover;
+            }
+
+            &__info{
+                display: flex;
+                align-items:flex-start;
+                justify-content: space-between;
+                padding: 20px;
+                
+                .heart1, .heart2{
+                    font-size: 22px;
+                }
+        
+                .heart2{
+                    display: none;
+                }
             }
 
             &__description{
@@ -237,20 +250,7 @@ nav img{
         }
     }
 
-    .restaurants-card-info{
-        display: flex;
-        align-items:flex-start;
-        justify-content: space-between;
-        padding: 20px;
-        
-        .heart1, .heart2{
-            font-size: 22px;
-        }
-
-        .heart2{
-            display: none;
-        }
-    }
+    
 
 
 
