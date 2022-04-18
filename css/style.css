@@ -163,9 +163,13 @@ nav img {
   border-radius: 20px;
   margin-bottom: 20px;
   position: relative;
+  transition: transform 0.2s;
   box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
   -webkit-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
   -moz-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
+}
+.restaurants-list .restaurants-card:hover {
+  transform: scale(1.1);
 }
 .restaurants-list .restaurants-card__img {
   height: 180px;
