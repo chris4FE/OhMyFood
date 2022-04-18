@@ -1,0 +1,265 @@
+@import "./Utils/variables";
+@import "./Pages/home";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+    // BUTTON
+
+.btn{
+    cursor: pointer;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+
+
+    // COLORS
+    background: $secondary;
+    background: linear-gradient(180deg, $secondary 0%, $primary 85%);
+    // BOX-SHADOW
+    @include shadow;
+
+    &:hover{
+        background: $secondary;
+        background: linear-gradient(180deg, rgba(255,121,218,0.9) 0%, rgba(147,86,220,0.9) 85%);
+
+        @include btn-shadow-hover;
+    }
+
+}
+
+// FONCTIONNEMENT
+
+.fonctionnement{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+    }
+}
+
+.fonctionnement-list{
+    list-style: none;
+    counter-reset: item;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__step{
+        counter-increment: item;
+
+        background-color: $lightgrey;
+        font-size: 16px;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        white-space: nowrap;
+
+        // BOX-SHADOW
+        @include shadow;
+
+        &__icon{
+            padding-right: 16px;
+            color: #7D7D7D;
+
+            &:hover{
+                color: $primary; // Use IF mixin to create rule if hover over li then icon is primary ?
+            }
+        }
+
+        &::marker{
+            background-color: $primary;
+            width: 20px;
+            height: 20px;
+            color: #99E2D0;
+        }
+    
+        &::before{
+            padding: 4px;
+            margin-right: 15px;
+            margin-left: -36px;
+            content: counter(item);
+            background-color: $primary;
+            border-radius: 100%;
+            color: #fff;
+            width: 1.2em;
+            text-align: center;
+            display: inline-block;
+    
+        }
+
+        &:hover{
+            background-color: $lightprimary;
+        }
+    }
+    }
+
+    // RESTAURANTS
+
+    .restaurants-list{
+        padding: 20px;
+        width: 100%;
+
+        h2{
+            font-size: 28px;
+            margin-bottom: 15px;
+            }
+
+        .restaurants-card{
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            margin-bottom: 20px;
+
+            // BOX-SHADOW
+            @include shadow;
+
+
+            &__img{
+                height: 180px;
+                border-radius: 20px 20px 0 0;
+                object-fit: cover;
+            }
+
+            &__info{
+                display: flex;
+                align-items:flex-start;
+                justify-content: space-between;
+                padding: 20px;
+                
+                .heart1, .heart2{
+                    font-size: 22px;
+                }
+        
+                .heart2{
+                    display: none;
+                }
+            }
+
+            &__description{
+                display: flex;
+                flex-direction: column;
+
+                &__genre{
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                &__name{
+                    font-weight: 300;
+                }
+
+
+            }
+        }
+    }
+
+    
+// FOOTER
+.footer{
+    background-color: #3f3f3f;
+    padding: 30px 20px;
+    color: #fff;
+
+    &__title{
+        font-family: 'shrikhand', cursive;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__menu{
+        list-style: none;
+
+    }
+}
+
+
+
+.footer li{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer li i {
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+    @media only screen and (min-width:768px){
+        // For Tablets & Desktops
+       
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .localisation{
+            width: 100%;
+        }
+
+        .form-restaurants{
+            width: 50%;
+        }
+
+        .fonctionnement{
+            background-color: $lightgrey;
+            width: 50%;
+            padding: 50px;
+        }
+
+        .fonctionnement-list__step{
+            padding: 15px 20px;
+        }
+
+        .restaurants-list{
+            padding: 50px;
+        }
+
+        .restaurants-list-container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .restaurants-card{
+            width: 23%;
+        }
+
+        // FOOTER
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+    }
+    
+    

@@ -1,0 +1,71 @@
+// HEADER
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img{
+    width: 200px;
+} 
+
+// LOCALISATION
+
+.localisation{
+    height: 60px;
+    background-color: $darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__icon{
+        font-size: 18px;
+        padding-right: 15px;
+    }
+
+    &__input{
+        font-size: 18px;
+        background-color: $darkgrey;
+        border: none;
+        width: 140px; // set width of text input field because it is not adapting to text. If no width then it is not centered on the page
+
+        &::placeholder{
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #000;
+                opacity: 1; /* Firefox */
+              }  
+              :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #000;
+              }  
+              ::-ms-input-placeholder { /* Microsoft Edge */
+                color: #000;
+              }
+        
+    }
+}
+
+// EXPLORE RESTAURANTS
+
+.form-restaurants{
+    
+    background-color: $lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 40px;
+    text-align: center;
+
+    h2{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    &__description{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+}
