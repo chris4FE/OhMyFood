@@ -111,7 +111,8 @@
     // RESTAURANTS
 
     .restaurants-list{
-        padding: 20px;
+        background-color: $lightgrey;
+        padding: 50px 20px;
         width: 100%;
 
         h2{
@@ -124,6 +125,7 @@
             flex-direction: column;
             border-radius: 20px;
             margin-bottom: 20px;
+            position: relative;
 
             // BOX-SHADOW
             @include shadow;
@@ -133,6 +135,19 @@
                 height: 180px;
                 border-radius: 20px 20px 0 0;
                 object-fit: cover;
+            }
+
+            &__badge{
+                display: flex;
+                justify-content: center;
+                width: 30%;
+                border-radius: 3px;
+                padding: 8px 20px;
+                background-color: $tertiary;
+                color: #4B7857;
+                position: absolute;
+                right: 15;
+                top: 15;
             }
 
             &__info{
@@ -173,7 +188,7 @@
 // FOOTER
 .footer{
     background-color: #3f3f3f;
-    padding: 30px 20px;
+    padding: 20px 20px;
     color: #fff;
 
     &__title{
@@ -241,6 +256,7 @@
 
         .restaurants-list{
             padding: 50px;
+            background-color: $white;
         }
 
         .restaurants-list-container{

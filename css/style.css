@@ -149,7 +149,8 @@ nav img {
 }
 
 .restaurants-list {
-  padding: 20px;
+  background-color: #F6F6F6;
+  padding: 50px 20px;
   width: 100%;
 }
 .restaurants-list h2 {
@@ -161,6 +162,7 @@ nav img {
   flex-direction: column;
   border-radius: 20px;
   margin-bottom: 20px;
+  position: relative;
   box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
   -webkit-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
   -moz-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
@@ -169,6 +171,18 @@ nav img {
   height: 180px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
+}
+.restaurants-list .restaurants-card__badge {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  border-radius: 3px;
+  padding: 8px 20px;
+  background-color: #99E2D0;
+  color: #4B7857;
+  position: absolute;
+  right: 15;
+  top: 15;
 }
 .restaurants-list .restaurants-card__info {
   display: flex;
@@ -197,7 +211,7 @@ nav img {
 
 .footer {
   background-color: #3f3f3f;
-  padding: 30px 20px;
+  padding: 20px 20px;
   color: #fff;
 }
 .footer__title {
@@ -251,6 +265,7 @@ nav img {
 
   .restaurants-list {
     padding: 50px;
+    background-color: #fff;
   }
 
   .restaurants-list-container {
