@@ -84,6 +84,99 @@
   font-weight: 300;
 }
 
+.restaurant-menu {
+  background-color: #F6F6F6;
+  padding-bottom: 60px;
+}
+.restaurant-menu__img-and-title {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-menu__img-and-title__img {
+  height: 210px;
+  object-fit: cover;
+}
+.restaurant-menu__img-and-title__title-and-icon-container {
+  background-color: #F6F6F6;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+  margin-top: -30px;
+}
+.restaurant-menu__img-and-title__title {
+  font-family: "shrikhand", cursive;
+  font-size: 24px;
+}
+.restaurant-menu__img-and-title__icon {
+  font-size: 24px;
+}
+.restaurant-menu__list {
+  padding: 0 20px 30px 20px;
+}
+.restaurant-menu__list__course-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+}
+.restaurant-menu__list__underline {
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+  margin: 3px 0 13px 0;
+}
+.restaurant-menu__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.restaurant-menu-card {
+  background-color: #fff;
+  height: 70px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
+}
+.restaurant-menu-card__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1;
+}
+.restaurant-menu-card__description {
+  padding: 10px;
+}
+.restaurant-menu-card__description__title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.restaurant-menu-card__description__details {
+  font-size: 12px;
+}
+.restaurant-menu-card__description__price {
+  font-size: 12px;
+  padding: 10px;
+}
+.restaurant-menu-card__check {
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-radius: 0 10px 10px 0;
+}
+.restaurant-menu-card__check__icon {
+  color: #fff;
+}
+
 header {
   height: 70px;
   display: flex;
@@ -253,99 +346,6 @@ nav img {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-}
-
-.restaurant-menu {
-  background-color: #F6F6F6;
-  padding-bottom: 60px;
-}
-.restaurant-menu__img-and-title {
-  display: flex;
-  flex-direction: column;
-}
-.restaurant-menu__img-and-title__img {
-  height: 210px;
-  object-fit: cover;
-}
-.restaurant-menu__img-and-title__title-and-icon-container {
-  background-color: #F6F6F6;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 20px 20px 0 0;
-  margin-top: -30px;
-}
-.restaurant-menu__img-and-title__title {
-  font-family: "shrikhand", cursive;
-  font-size: 24px;
-}
-.restaurant-menu__img-and-title__icon {
-  font-size: 24px;
-}
-.restaurant-menu__list {
-  padding: 0 20px 30px 20px;
-}
-.restaurant-menu__list__course-title {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400;
-}
-.restaurant-menu__list__underline {
-  height: 3px;
-  width: 40px;
-  background-color: #99E2D0;
-  margin: 3px 0 13px 0;
-}
-.restaurant-menu__btn {
-  display: flex;
-  justify-content: center;
-}
-
-.restaurant-menu-card {
-  background-color: #fff;
-  height: 70px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
-  -webkit-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
-  -moz-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
-}
-.restaurant-menu-card__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex: 1;
-}
-.restaurant-menu-card__description {
-  padding: 10px;
-}
-.restaurant-menu-card__description__title {
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-.restaurant-menu-card__description__details {
-  font-size: 12px;
-}
-.restaurant-menu-card__description__price {
-  font-size: 12px;
-  padding: 10px;
-}
-.restaurant-menu-card__check {
-  height: 100%;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #99E2D0;
-  border-radius: 0 10px 10px 0;
-}
-.restaurant-menu-card__check__icon {
-  color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
