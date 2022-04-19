@@ -1,0 +1,79 @@
+// RESTAURANTS
+
+.restaurants-list{
+    background-color: $lightgrey;
+    padding: 50px 20px;
+    width: 100%;
+
+    h2{
+        font-size: 28px;
+        margin-bottom: 15px;
+        }
+
+    .restaurants-card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        position: relative;
+
+        // animation on hover
+        transition: transform .2s;
+
+        // BOX-SHADOW
+        @include shadow;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        &--nouveau::after{
+            position: absolute;
+            content: 'Nouveau';
+            background-color: $tertiary;
+            color: #4B7857;
+            padding: 8px 20px;
+            border-radius: 3px;
+            right: 15px;
+            top: 15px;
+        }
+
+        &__img{
+            height: 180px;
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+        }
+
+        &__info{
+            display: flex;
+            align-items:flex-start;
+            justify-content: space-between;
+            padding: 20px;
+            
+            .heart1, .heart2{
+                font-size: 22px;
+            }
+    
+            .heart2{
+                display: none;
+            }
+        }
+
+        &__description{
+            display: flex;
+            flex-direction: column;
+
+            &__genre{
+                margin-bottom: 5px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            &__name{
+                font-weight: 300;
+            }
+
+
+        }
+    }
+}

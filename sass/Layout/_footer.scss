@@ -1,0 +1,33 @@
+// FOOTER
+.footer{
+    background-color: #3f3f3f;
+    padding: 20px 20px;
+    color: #fff;
+
+    &__title{
+        font-family: 'shrikhand', cursive;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__menu{
+        list-style: none;
+
+    }
+}
+
+.footer li{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer li i {
+    font-size: 14px;
+    padding-right: 10px;
+}
