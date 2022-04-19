@@ -1,5 +1,6 @@
 @import "./Utils/variables";
 @import "./Pages/home";
+@import "./Components/button";
 
 
 *{
@@ -9,31 +10,7 @@
     font-family: 'Roboto', sans-serif; 
 }
 
-    // BUTTON
 
-.btn{
-    cursor: pointer;
-    padding: 15px 30px;
-    border: 0;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 16px;
-
-
-    // COLORS
-    background: $secondary;
-    background: linear-gradient(180deg, $secondary 0%, $primary 85%);
-    // BOX-SHADOW
-    @include shadow;
-
-    &:hover{
-        background: $secondary;
-        background: linear-gradient(180deg, rgba(255,121,218,0.9) 0%, rgba(147,86,220,0.9) 85%);
-
-        @include btn-shadow-hover;
-    }
-
-}
 
 // FONCTIONNEMENT
 
