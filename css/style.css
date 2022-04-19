@@ -171,19 +171,20 @@ nav img {
 .restaurants-list .restaurants-card:hover {
   transform: scale(1.1);
 }
+.restaurants-list .restaurants-card--nouveau::after {
+  position: absolute;
+  content: "Nouveau";
+  background-color: #99E2D0;
+  color: #4B7857;
+  padding: 8px 20px;
+  border-radius: 3px;
+  right: 15px;
+  top: 15px;
+}
 .restaurants-list .restaurants-card__img {
   height: 180px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
-}
-.restaurants-list .restaurants-card__badge {
-  border-radius: 3px;
-  padding: 8px 20px;
-  background-color: #99E2D0;
-  color: #4B7857;
-  position: absolute;
-  right: 15;
-  top: 15;
 }
 .restaurants-list .restaurants-card__info {
   display: flex;

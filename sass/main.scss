@@ -137,20 +137,21 @@
                 transform: scale(1.1);
             }
 
+            &--nouveau::after{
+                position: absolute;
+                content: 'Nouveau';
+                background-color: $tertiary;
+                color: #4B7857;
+                padding: 8px 20px;
+                border-radius: 3px;
+                right: 15px;
+                top: 15px;
+            }
+
             &__img{
                 height: 180px;
                 border-radius: 20px 20px 0 0;
                 object-fit: cover;
-            }
-
-            &__badge{
-                border-radius: 3px;
-                padding: 8px 20px;
-                background-color: $tertiary;
-                color: #4B7857;
-                position: absolute;
-                right: 15;
-                top: 15;
             }
 
             &__info{
@@ -187,7 +188,6 @@
         }
     }
 
-    
 // FOOTER
 .footer{
     background-color: #3f3f3f;
