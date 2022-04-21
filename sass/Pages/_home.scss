@@ -91,6 +91,10 @@
         border-radius: 15px;
         white-space: nowrap;
 
+        &:hover i{
+            color: $primary;
+        }
+
         // BOX-SHADOW
         @include shadow;
 
@@ -126,6 +130,10 @@
 
         &:hover{
             background-color: $lightprimary;
+
+            &i{
+                color: $primary;
+            }
         }
     }
     }

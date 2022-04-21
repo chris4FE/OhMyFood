@@ -34,6 +34,7 @@
 
     &__list{
         padding: 0 20px 30px 20px;
+        
 
         &__course-title{
             text-transform: uppercase;
@@ -68,6 +69,15 @@
 
     @include shadow;
 
+    &:active .restaurant-menu-card__check, &:hover .restaurant-menu-card__check{
+        width: 60px;
+        transform: translateX(0);
+    }
+    &:active .restaurant-menu-card__icon,  &:hover .restaurant-menu-card__icon {
+        transform: rotate(1turn);
+        opacity:1;
+    }
+
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -99,16 +109,34 @@
 
     &__check{
         height: 100%;
-        width: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: $tertiary;
         border-radius: 0 10px 10px 0;
 
+        // animation
+        width: 0;
+        transition: all 400ms 100ms ease-in-out;
+        transform: translateX(100%);
+
         &__icon{
             color: #fff;
+
+            // animation
+            opacity: 0;
+            transition: all 400ms 100ms ease-in-out;
         }
         
+    }
+}
+
+@keyframes check-fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
     }
 }
