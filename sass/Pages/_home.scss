@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.4);
 
     &__icon{
         font-size: 18px;
@@ -28,7 +29,12 @@
               }  
               ::-ms-input-placeholder { /* Microsoft Edge */
                 color: #000;
+
               }
+
+        &:focus-visible{
+            outline: none;
+        }
         
     }
 }
@@ -91,49 +97,51 @@
         border-radius: 15px;
         white-space: nowrap;
 
+        // BOX-SHADOW
+        @include shadow;
+
         &:hover i{
             color: $primary;
         }
 
-        // BOX-SHADOW
-        @include shadow;
-
-        &__icon{
-            padding-right: 16px;
-            color: #7D7D7D;
-
-            &:hover{
-                color: $primary; // Use IF mixin to create rule if hover over li then icon is primary ?
-            }
-        }
-
-        &::marker{
-            background-color: $primary;
-            width: 20px;
-            height: 20px;
-            color: #99E2D0;
-        }
     
-        &::before{
-            padding: 4px;
-            margin-right: 15px;
-            margin-left: -36px;
-            content: counter(item);
-            background-color: $primary;
-            border-radius: 100%;
-            color: #fff;
-            width: 1.2em;
-            text-align: center;
-            display: inline-block;
-    
-        }
+
+    &__icon{
+        padding-right: 16px;
+        color: #7D7D7D;
 
         &:hover{
-            background-color: $lightprimary;
-
-            &i{
-                color: $primary;
-            }
+            color: $primary; // Use IF mixin to create rule if hover over li then icon is primary ?
         }
+    }
+
+    &::marker{
+        background-color: $primary;
+        width: 20px;
+        height: 20px;
+        color: #99E2D0;
+    }
+
+    &::before{
+        padding: 4px;
+        margin-right: 15px;
+        margin-left: -36px;
+        content: counter(item);
+        background-color: $primary;
+        border-radius: 100%;
+        color: #fff;
+        width: 1.2em;
+        text-align: center;
+        display: inline-block;
+
+    }
+
+    &:hover{
+        background-color: $lightprimary;
+
+        &i{
+            color: $primary;
+        }
+    }
     }
     }
