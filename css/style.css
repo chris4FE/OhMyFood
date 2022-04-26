@@ -26,53 +26,22 @@
   animation: fadeOut 3s forwards;
 }
 
-.dots-bars-4 {
-  width: 40px;
-  height: 20px;
-  --c:radial-gradient(farthest-side,currentColor 93%,#0000);
-  background: var(--c) 0 0, var(--c) 50% 0, var(--c) 100% 0;
-  background-size: 8px 8px;
-  background-repeat: no-repeat;
+.loader {
+  width: 248px;
+  height: 248px;
+  display: inline-block;
   position: relative;
-  animation: db4-0 1s linear infinite alternate;
+  background: #9356DC;
+  box-sizing: border-box;
+  animation: zeroRotation 1.5s ease infinite alternate-reverse;
 }
 
-.dots-bars-4:before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 12px;
-  background: #FF79DA;
-  left: 0;
-  top: 0;
-  animation: db4-1 1s linear infinite alternate, db4-2 0.5s cubic-bezier(0, 200, 0.8, 200) infinite;
-}
-
-@keyframes db4-0 {
+@keyframes zeroRotation {
   0% {
-    background-position: 0 100%, 50% 0, 100% 0;
-  }
-  8%, 42% {
-    background-position: 0 0, 50% 0, 100% 0;
-  }
-  50% {
-    background-position: 0 0, 50% 100%, 100% 0;
-  }
-  58%, 92% {
-    background-position: 0 0, 50% 0, 100% 0;
+    transform: scale(1) rotate(0deg);
   }
   100% {
-    background-position: 0 0, 50% 0, 100% 100%;
-  }
-}
-@keyframes db4-1 {
-  100% {
-    left: calc(100% - 8px);
-  }
-}
-@keyframes db4-2 {
-  100% {
-    top: -0.1px;
+    transform: scale(0) rotate(360deg);
   }
 }
 @keyframes fadeOut {
