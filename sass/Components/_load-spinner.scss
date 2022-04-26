@@ -12,13 +12,26 @@
 }
 
 .loader {
-  width: 248px;
-  height: 248px;
   display: inline-block;
   position: relative;
-  background: $primary;
-  box-sizing: border-box;
+  background-color: $primary;
+    background-image: linear-gradient(45deg, $primary, $secondary);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
   animation: zeroRotation 1.5s ease infinite alternate-reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 356px;
+}
+
+.load-icon{
+  z-index: 99;
+  color: #fff;
 }
 
 @keyframes zeroRotation {
@@ -26,7 +39,7 @@
     transform: scale(1) rotate(0deg);
   }
   100% {
-    transform: scale(0) rotate(360deg);
+    transform: scale(0) rotate(500deg);
   }
 }
     
