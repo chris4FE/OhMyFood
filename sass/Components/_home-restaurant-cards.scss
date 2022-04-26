@@ -33,7 +33,7 @@
             transform: scale(1.1);
         }
 
-        &--nouveau::after{
+        &-nouveau::after{
             position: absolute;
             content: 'Nouveau';
             background-color: $tertiary;

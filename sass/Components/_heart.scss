@@ -4,6 +4,11 @@
     justify-content: center;
     align-items: center;
 
+
+    .heart1{
+        color: $primary;
+        opacity: 0;
+    }
     .heart1{
         &:hover{
             color: $secondary;

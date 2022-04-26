@@ -94,6 +94,10 @@
   justify-content: center;
   align-items: center;
 }
+.heart-container .heart1 {
+  color: #9356DC;
+  opacity: 0;
+}
 .heart-container .heart1:hover {
   color: #FF79DA;
 }
@@ -135,7 +139,7 @@
 .restaurants-list .restaurants-card:hover {
   transform: scale(1.1);
 }
-.restaurants-list .restaurants-card--nouveau::after {
+.restaurants-list .restaurants-card-nouveau::after {
   position: absolute;
   content: "Nouveau";
   background-color: #99E2D0;
