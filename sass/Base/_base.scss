@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+@media only screen and (min-width:768px){
+    // For Tablets & Desktops
+   
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+    }
+
+}

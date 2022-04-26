@@ -145,3 +145,47 @@
     }
     }
     }
+
+
+    @media only screen and (min-width:768px){
+        // For Tablets & Desktops
+       
+        
+        .localisation{
+            width: 100%;
+        }
+
+        .form-restaurants{
+            background-color: #fff;
+        }
+        
+
+        .fonctionnement{
+            background-color: #fff;
+            padding: 50px;
+
+            &__title{
+                text-align: center;
+            }
+
+        }
+
+        .fonctionnement-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &__step{
+                padding: 15px 40px;
+                margin: 20px;
+                background: #fff;
+
+                &::before{
+                    margin-left: -52px;
+                }
+            }
+
+            
+        }
+    
+    }
