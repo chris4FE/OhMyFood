@@ -4,11 +4,7 @@
     justify-content: center;
     align-items: center;
 
-
-    .heart1{
-        color: $primary;
-        opacity: 0;
-    }
+    
     .heart1{
         &:hover{
             color: $secondary;
@@ -18,7 +14,7 @@
     .heart2{
         position: absolute;
         opacity: 0;
-        transition: all .5s ease-in;
+        transition: all .3s ease-in;
     
         &:hover{
             opacity: 1;

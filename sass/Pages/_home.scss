@@ -66,7 +66,7 @@
 // FONCTIONNEMENT
 
 .fonctionnement{
-    padding: 50px 20px;
+    padding: 50px 20px 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +100,7 @@
         // BOX-SHADOW
         @include shadow;
 
-        &:hover i{
+        &:hover .fonctionnement-list__step__icon{
             color: $primary;
         }
 
@@ -146,6 +146,23 @@
     }
     }
 
+    // RESTAURANTS LIST
+    .restaurants-list{
+        background-color: $lightgrey;
+        padding: 50px 20px;
+        width: 100%;
+    
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    
+        h2{
+            font-size: 28px;
+            margin-bottom: 20px;
+            }
+    }
+
 
     @media only screen and (min-width:768px){
         // For Tablets & Desktops
@@ -156,13 +173,14 @@
         }
 
         .form-restaurants{
-            background-color: #fff;
+            background-color: $white;
+            padding-bottom: 40px;
         }
         
 
         .fonctionnement{
             background-color: #fff;
-            padding: 50px;
+            padding: 20px 30px;
 
             &__title{
                 text-align: center;
@@ -184,8 +202,26 @@
                     margin-left: -52px;
                 }
             }
-
             
         }
+
+        .restaurants-list{
+            background-color: $white;
+            padding: 20px 30px 50px 30px;
+    
+            h2{
+                text-align: center;
+                margin-bottom: 35px;
+            }
+        }
+    
+        .restaurants-list-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    
     
     }
+
+    

@@ -1,0 +1,8 @@
+// Shadows
+@mixin shadow {
+    box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
+}
+
+@mixin btn-shadow-hover {
+    box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.3);
+}
