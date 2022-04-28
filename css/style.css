@@ -442,7 +442,7 @@ nav img {
 .fonctionnement-list__step:hover {
   background-color: rgba(146, 86, 220, 0.1);
 }
-.fonctionnement-list__step:hoveri {
+.fonctionnement-list__step:hover .fonctionnement-list__step__icon {
   color: #9356DC;
 }
 
