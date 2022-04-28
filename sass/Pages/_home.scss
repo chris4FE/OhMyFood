@@ -96,6 +96,7 @@
         margin-bottom: 20px;
         border-radius: 15px;
         white-space: nowrap;
+        cursor: pointer;
 
         // BOX-SHADOW
         @include shadow;
@@ -217,7 +218,7 @@
     
         .restaurants-list-container{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: wrap;
         }
     

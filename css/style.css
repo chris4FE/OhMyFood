@@ -409,6 +409,7 @@ nav img {
   margin-bottom: 20px;
   border-radius: 15px;
   white-space: nowrap;
+  cursor: pointer;
   box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.21);
 }
 .fonctionnement-list__step:hover .fonctionnement-list__step__icon {
@@ -503,7 +504,7 @@ nav img {
 
   .restaurants-list-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
