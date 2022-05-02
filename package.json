@@ -1,10 +1,11 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
+  "description": "OhMyFood - Commander son repas à l'avance dans un restaurant",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
   },
   "repository": {
     "type": "git",
@@ -12,8 +13,10 @@
   },
   "author": "",
   "license": "ISC",
+  "browserlist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/chris4FE/OhMyFood/issues"
   },
   "homepage": "https://github.com/chris4FE/OhMyFood#readme"
 }
+

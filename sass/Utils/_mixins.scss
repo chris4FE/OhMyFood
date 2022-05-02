@@ -1,8 +1,12 @@
 // Shadows
-@mixin shadow {
-    box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.21);
+@mixin shadow($opacity:0.2){
+    box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, $opacity);
 }
 
-@mixin btn-shadow-hover {
-    box-shadow: 1px 5px 15px 0px rgba(0,0,0,0.3);
+
+// Text overflow
+@mixin text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
 }

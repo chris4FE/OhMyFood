@@ -1,9 +1,10 @@
 .restaurant-menu-card{
     opacity: 0;
     overflow: hidden;
+    cursor: pointer;
 
     background-color: #fff;
-    height: 70px;
+    height: 65px;
     margin-bottom: 12px;
     border-radius: 10px;
     display: flex;
@@ -12,6 +13,11 @@
     align-items: center;
 
     @include shadow;
+
+    &:hover{
+        @include shadow(0.3);
+    }
+
 
     &:active .restaurant-menu-card__check, &:hover .restaurant-menu-card__check{
         width: 60px;
@@ -39,22 +45,19 @@
     
 
         &__title{
-            font-size: 14px;
+            font-size: 16px;
             margin-bottom: 5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
+            @include text-overflow;
         }
 
         &__details{
-            font-size: 12px;
+            font-size: 14px;
             white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
+            @include text-overflow;
         }
 
         &__price{
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 500;
             padding: 10px;
         }
@@ -110,6 +113,11 @@
 .animation-delay-3{
     animation: slideUp 1.1s ease-in forwards;
     animation-delay: .8s;
+}
+
+.animation-delay-4{
+    animation: slideUp 1.2s ease-in forwards;
+    animation-delay: .9s;
 }
 
 

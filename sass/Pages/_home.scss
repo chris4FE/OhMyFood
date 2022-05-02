@@ -24,13 +24,6 @@
                 color: #000;
                 opacity: 1; /* Firefox */
               }  
-              :-ms-input-placeholder { /* Internet Explorer 10-11 */
-                color: #000;
-              }  
-              ::-ms-input-placeholder { /* Microsoft Edge */
-                color: #000;
-
-              }
 
         &:focus-visible{
             outline: none;
@@ -139,6 +132,7 @@
 
     &:hover{
         background-color: $lightprimary;
+        @include shadow(0.3);
 
     }
     }
