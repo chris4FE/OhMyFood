@@ -12,11 +12,7 @@ Finis, les temps d'attente au restaurant !
 
 **Maquettes**
 
-![Accueil](https://user-images.githubusercontent.com/103047812/166260829-632121d8-45fa-4071-b8a7-62d8fb550f65.png)
-![Menu - À la française](https://user-images.githubusercontent.com/103047812/166260853-5fca6af9-e830-4b12-a045-689e277fe8b9.png)
-![Menu - La note enchantée](https://user-images.githubusercontent.com/103047812/166260856-26d66fa8-32ec-4beb-b6db-5138b4577385.png)
-![Menu - La palette du goût](https://user-images.githubusercontent.com/103047812/166260858-dff6a159-662c-4826-9c14-a02d44d0fe57.png)
-![Menu - Le délice des sens](https://user-images.githubusercontent.com/103047812/166260861-02831712-6e69-4e1c-9451-730747e5b2ca.png)
+<img width="587" alt="maquettes_ohmyfood" src="https://user-images.githubusercontent.com/103047812/166261739-494c87b0-240b-4063-bef1-3582442b49d5.png">
 
 Également fournis pour le projet, des vidéos du rendu des animations et le brief du client.
 
