@@ -69,7 +69,7 @@
     }
 
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:$tablet-up){
     // For Tablets & Desktops
 
 
@@ -84,7 +84,7 @@
 
 }
 
-@media only screen and (min-width:1025px){
+@media only screen and (min-width:$desktop-up){
     // For Tablets & Desktops
 
 
