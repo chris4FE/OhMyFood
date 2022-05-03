@@ -90,6 +90,7 @@
         border-radius: 15px;
         white-space: nowrap;
         cursor: pointer;
+        transition: .4s;
 
         // BOX-SHADOW
         @include shadow;

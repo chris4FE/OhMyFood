@@ -65,24 +65,33 @@
        display: flex;
        justify-content: center;
    }
+
+   .restaurant-menu{
+
+        &__img-and-title{
+            &__img{
+                height: 320px;
+            }
+            
+            &__title-and-icon-container{
+            justify-content: center;
+            align-items: baseline;
     
-    .restaurant-menu__img-and-title{
-        &__img{
-            height: 320px;
-        }
-        
-        &__title-and-icon-container{
-        justify-content: center;
-        align-items: baseline;
-
-            h1{
-                margin-right: 15px;
+                h1{
+                    margin-right: 15px;
+                }
+    
+                .fa-heart{
+                    font-size: 20px;
+                }
             }
 
-            .fa-heart{
-                font-size: 20px;
-            }
         }
-    }
+
+        &__list{
+            padding: 0 10px 30px;
+        }
+    
+}
 
 }

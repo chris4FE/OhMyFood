@@ -52,7 +52,6 @@
 
         &__details{
             font-size: 14px;
-            white-space: nowrap;
             @include text-overflow;
         }
 
@@ -125,7 +124,19 @@
 @media only screen and (min-width:$desktop-up){    
     
     .restaurant-menu-card{
-        width: 350px;
+        width: 320px;
+
+        &__description{
+    
+            &__title{
+                font-size: 15px;
+            }
+    
+            &__details{
+                font-size: 13px;
+            }
+
+        }
     }
  
  }
