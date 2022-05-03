@@ -8,10 +8,8 @@
         color: #fff;
         font-size: 16px;
         min-width: 200px;
-    
-        // COLORS
+        
         background: linear-gradient(180deg, $secondary, $primary);
-        // BOX-SHADOW
         @include shadow;
     
         &:hover{

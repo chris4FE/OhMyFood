@@ -298,6 +298,11 @@
   animation-delay: 0.9s;
 }
 
+@media only screen and (min-width: 1025px) {
+  .restaurant-menu-card {
+    width: 350px;
+  }
+}
 header {
   height: 70px;
   display: flex;
@@ -576,6 +581,27 @@ nav img {
 .restaurant-menu__btn {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .restaurant-menu__img-and-title__img {
+    height: 320px;
+  }
+  .restaurant-menu__img-and-title__title-and-icon-container {
+    justify-content: center;
+    align-items: baseline;
+  }
+  .restaurant-menu__img-and-title__title-and-icon-container h1 {
+    margin-right: 10px;
+  }
+  .restaurant-menu__img-and-title__title-and-icon-container .fa-heart {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
