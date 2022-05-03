@@ -25,6 +25,7 @@
         &__title{
             font-family: 'shrikhand', cursive;
             font-size: 26px;
+            font-weight: normal;
         }
 
         &__icon{
@@ -74,8 +75,8 @@
             }
             
             &__title-and-icon-container{
-            justify-content: center;
-            align-items: baseline;
+                justify-content: center;
+                align-items: baseline;
     
                 h1{
                     margin-right: 15px;

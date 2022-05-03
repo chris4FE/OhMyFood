@@ -340,6 +340,7 @@ nav img {
   font-family: "shrikhand", cursive;
   font-size: 20px;
   margin-bottom: 15px;
+  font-weight: normal;
 }
 .footer__menu {
   list-style: none;
@@ -566,6 +567,7 @@ nav img {
 .restaurant-menu__img-and-title__title {
   font-family: "shrikhand", cursive;
   font-size: 26px;
+  font-weight: normal;
 }
 .restaurant-menu__img-and-title__icon {
   font-size: 26px;
