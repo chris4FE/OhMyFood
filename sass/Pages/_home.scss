@@ -22,7 +22,7 @@
         &::placeholder{
             /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: #000;
-                opacity: 1; /* Firefox */
+                opacity: 1;
               }  
 
         &:focus-visible{
@@ -92,7 +92,6 @@
         cursor: pointer;
         transition: .4s;
 
-        // BOX-SHADOW
         @include shadow;
 
         &:hover .fonctionnement-list__step__icon{
@@ -106,15 +105,8 @@
             color: #7D7D7D;
 
             &:hover{
-                color: $primary; // Use IF mixin to create rule if hover over li then icon is primary ?
+                color: $primary; 
             }
-        }
-
-        &::marker{
-            background-color: $primary;
-            width: 20px;
-            height: 20px;
-            color: #99E2D0;
         }
 
         &::before{
